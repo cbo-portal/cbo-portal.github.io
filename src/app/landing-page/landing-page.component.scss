@@ -1,0 +1,119 @@
+.pic-container {
+    background: white;
+    //padding-top: 10px;
+}
+
+.broadcom {
+    width: 170px;
+    height: 90px;
+}
+
+.cbo-text {
+    margin-left: 300px;
+    font-size: 28px;
+}
+
+.connects-count-header {
+    height: 150px;
+}
+
+.connects-count-header-left {
+    text-align: center;
+    background-color: #808080;
+}
+
+.connects-count-header-right {
+    text-align: center;
+    background-color: #d4d4db;
+}
+
+.mat-toolbar.mat-primary {
+    background-color: black;
+}
+
+.fields-spacing {
+    margin-top: 10px;
+}
+
+.buttons-spacing {
+    margin-bottom: 15px;
+}
+
+.my-connects {
+    margin-top: 20px; 
+    border: 1px solid black;
+    border-radius: 5px;
+    width: auto;
+    padding: 10px;
+    background-color: #ded4d4;
+    font-size: 20px;
+    font-weight: 550;
+}
+
+.my-connects-green {
+    margin-top: 20px; 
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 100px;
+    color: #2f6516;
+    background-color: #afd29f;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.my-connects-orange {
+    margin-top: 20px; 
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 100px;
+    color: #7b3c0f;
+    background-color: #d2c09f;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.my-connects-red {
+    margin-top: 20px; 
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 100px;
+    color: red;
+    background-color: #d2a39f;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.my-connects-grey {
+    margin-top: 20px; 
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 100px;
+    color: rgb(47, 46, 46);
+    background-color: #969090;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.chart {
+    //margin: 5px 20px 15px auto; 
+    display: block;
+    width: 120px;
+    //border: 1px solid black;
+}
+
+.number {
+    margin-left: 70px;
+    font-size: 500%;
+    font-weight: 600;
+    color: rgb(0, 255, 238);
+}
+
+.main-text {
+    margin-left: 40px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    font-size: 150%;
+    font-weight: 500;
+    color: white;
+    text-align: left;
+}

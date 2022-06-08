@@ -1,0 +1,52 @@
+<div>
+    <div class="group-field">
+    <mat-form-field appearance="fill" [style.width.%]="80">
+        <mat-label>Talent Group</mat-label>
+        <mat-select [formControl]="talentGroup">
+            <mat-option *ngFor="let group of groups" [value]="group">{{group}}</mat-option>
+        </mat-select>
+    </mat-form-field>
+    </div>
+    <div fxLayout="row" fxLayoutAlign="left left">
+        <div style="padding-left: 350px;">Total Connects</div>
+    </div>
+    <div fxLayout="row" fxLayoutAlign="space-around center">
+      <div class="chart">
+          Connects
+        <canvas width="250px" height="130px" baseChart
+                [data]="connectsPieChartData"
+                [type]="connectsPieChartType"
+                [options]="connectsPieChartOptions"
+                [plugins]="connectsPieChartPlugins">
+        </canvas>
+      </div>
+      <div class="chart">
+        Technology/Skill-set
+        <canvas baseChart
+          [data]="barChartData"
+          [options]="barChartOptions"
+          [plugins]="barChartPlugins"
+          [type]="barChartType"
+          (chartHover)="barChartHovered($event)"
+          (chartClick)="barChartClicked($event)">
+        </canvas>
+      </div>
+      <div class="list">
+        <mat-card class="mat-elevation-z0">
+          <mat-card-title class="card-title">Top Brand Ambassadors</mat-card-title>
+        <ol role="list">
+            <li role="listitem">John Smith  87%</li>
+            <li role="listitem">Jane Doe  92%</li>
+            <li role="listitem">John Doe  56%</li>
+        </ol>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="button-row">
+    <button mat-button mat-raised-button color="primary" (click)="toggleLegend()">Toggle Legend</button>
+    <button mat-button mat-raised-button color="primary" (click)="changeLabels()">Change Labels</button>
+    <button mat-button mat-raised-button color="primary" (click)="addSlice()">Add Slice</button>
+    <button mat-button mat-raised-button color="primary" (click)="removeSlice()">Remove Slice</button>
+    <button mat-button mat-raised-button color="primary" (click)="changeLegendPosition()">Change Legend Position</button>
+  </div> -->

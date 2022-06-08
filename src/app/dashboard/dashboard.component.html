@@ -1,0 +1,44 @@
+<div>
+    <div fxLayout="row" fxLayoutAlign="space-around center">
+        <div style="padding-left: 30px;">Total Connects</div>
+        <div>Total Practioners Joined</div>
+    </div>
+    <div fxLayout="row" fxLayoutAlign="space-around center">
+      <div class="chart">
+          Connects
+        <canvas width="300px" height="150px" baseChart
+                [data]="connectsPieChartData"
+                [type]="connectsPieChartType"
+                [options]="connectsPieChartOptions"
+                [plugins]="connectsPieChartPlugins">
+        </canvas>
+      </div>
+      <div class="chart">
+        Technology/Skill-set
+        <canvas baseChart
+          [data]="barChartData"
+          [options]="barChartOptions"
+          [plugins]="barChartPlugins"
+          [type]="barChartType"
+          (chartHover)="barChartHovered($event)"
+          (chartClick)="barChartClicked($event)">
+        </canvas>
+      </div>
+      <div class="chart">
+        Status
+      <canvas width="300px" height="150px" baseChart
+              [data]="statusPieChartData"
+              [type]="statusPieChartType"
+              [options]="statusPieChartOptions"
+              [plugins]="statusPieChartPlugins">
+      </canvas>
+    </div>
+    </div>
+  </div>
+  <!-- <div class="button-row">
+    <button mat-button mat-raised-button color="primary" (click)="toggleLegend()">Toggle Legend</button>
+    <button mat-button mat-raised-button color="primary" (click)="changeLabels()">Change Labels</button>
+    <button mat-button mat-raised-button color="primary" (click)="addSlice()">Add Slice</button>
+    <button mat-button mat-raised-button color="primary" (click)="removeSlice()">Remove Slice</button>
+    <button mat-button mat-raised-button color="primary" (click)="changeLegendPosition()">Change Legend Position</button>
+  </div> -->
