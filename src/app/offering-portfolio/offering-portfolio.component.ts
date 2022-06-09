@@ -40,7 +40,7 @@ export class OfferingPortfolioComponent implements OnInit {
   public connectsPieChartData: ChartData<'pie', number[], string | string[]> = {
     labels: [ [ 'Completed' ], [ 'Delayed' ], 'Missed' ],
     datasets: [ {
-      data: [ 600, 200, 200 ],
+      data: [ 800, 120, 180 ],
       backgroundColor: 	['#AFEE66', '#33FFE3', '#FCFF33'],
       hoverBackgroundColor: ['#AFEE66', '#33FFE3', '#FCFF33'] 
     } ]
@@ -112,7 +112,7 @@ export class OfferingPortfolioComponent implements OnInit {
     scales: {
       x: {},
       y: {
-        min: 0
+        min: 10
       }
     },
     plugins: {
@@ -133,7 +133,7 @@ export class OfferingPortfolioComponent implements OnInit {
   public barChartData: ChartData<'bar'> = {
     labels: [ 'VMWare', 'DevOps', 'Cloud', 'Testing', 'Database', 'Citrix' ],
     datasets: [
-      { data: [ 10, 17, 12, 10, 4, 6, 3 ], label: 'Connects', backgroundColor: 	'#AFEE66', hoverBackgroundColor: '#AFEE66' }
+      { data: [ 100, 70, 112, 90, 40, 78, 34 ], label: 'Connects', backgroundColor: 	'#AFEE66', hoverBackgroundColor: '#AFEE66' }
     ]
   };
 

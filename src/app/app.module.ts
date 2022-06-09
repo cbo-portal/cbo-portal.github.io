@@ -15,14 +15,16 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { OfferingPortfolioComponent } from './offering-portfolio/offering-portfolio.component';
 import { NgChartsModule } from 'ng2-charts';
 import { MatListModule } from '@angular/material/list'
-import { MatCardModule } from '@angular/material/card'
+import { MatCardModule } from '@angular/material/card';
+import { ExcelPopUpComponent } from './excel-pop-up/excel-pop-up.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingPageComponent,
     DashboardComponent,
-    OfferingPortfolioComponent
+    OfferingPortfolioComponent,
+    ExcelPopUpComponent
   ],
   imports: [
     BrowserModule,
