@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { ChartData, ChartEvent, ChartOptions, ChartType } from 'chart.js';
+import { MatDialog } from '@angular/material/dialog';
+import { ExcelPopUpComponent } from '../excel-pop-up/excel-pop-up.component';
 
 @Component({
   selector: 'app-landing-page',
@@ -9,7 +11,7 @@ import { ChartData, ChartEvent, ChartOptions, ChartType } from 'chart.js';
 })
 export class LandingPageComponent implements OnInit {
 
-  constructor() { }
+  constructor(private dialog: MatDialog) { }
 
   ngOnInit(): void {
   }
@@ -59,6 +61,29 @@ export class LandingPageComponent implements OnInit {
 
   public chartHovered({ event, active }: { event: ChartEvent, active: {}[] }): void {
     console.log(event, active);
+  }
+
+  openExcelDialog(action: string): void {
+    //const id = event._elementRef.nativeElement.id;
+    const dialogRef = this.dialog.open(ExcelPopUpComponent, {
+      hasBackdrop: true,
+      disableClose: true,
+      data: action,
+      autoFocus: false
+    }).afterClosed().subscribe(result => {
+      if (result) {
+        if (result == 'Submit') {
+          this.onSubmit();
+        }
+        else if (result == 'Cancel') {
+          //this.onReject();
+        }
+      }
+    });
+  }
+
+  onSubmit() {
+    console.log('Excel dialog clicked')
   }
 
 }

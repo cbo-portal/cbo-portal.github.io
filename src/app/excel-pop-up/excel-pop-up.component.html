@@ -1,1 +1,19 @@
-<p>excel-pop-up works!</p>
+<div class="confirmation-dialog-container">
+
+    <div mat-dialog-title class="confirmation-dialog-header">
+      <div fxFlexLayout="row nowrap">
+        <div fxFlex="0 0 96%" class="text-center header-for-dialog">My Connects - {{data}}</div>
+        <div fxFlex="0 0 4%" class="text-right"><mat-icon [inline]="true" class="clickable" (click)="close()">close</mat-icon></div>
+      </div>
+    </div>
+  
+    <div fxLayout="row nowrap" mat-dialog-content class="confirmation-dialog-body">
+        <iframe width="100%" height="100%" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=7CDAFECF25AB92FC%21110&authkey=%21AGaGmMnPaiFZ0Ew&em=2">
+        </iframe>
+    </div>
+  
+    <div mat-dialog-actions class="confirmation-dialog-footer" fxLayout="column nowrap" fxLayoutGap="10px">
+      <div ><button mat-raised-button color="primary" class="full-width" [mat-dialog-close]="data">Close</button></div>
+    </div>
+  
+  </div>

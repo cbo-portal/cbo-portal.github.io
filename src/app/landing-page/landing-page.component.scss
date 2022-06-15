@@ -126,3 +126,25 @@
     color: white;
     text-align: left;
 }
+
+.mat-tab-group {
+    width: 90% !important;
+    height: 100vh !important;
+    margin: 10px auto;
+}
+
+:host ::ng-deep .mat-tab-body-wrapper {
+    height: 100%;
+  
+  }
+  
+:host ::ng-deep .mat-tab-body.mat-tab-body-active {
+    height: 100%;
+  
+}
+
+.copyright {
+    background-color: #dbdada;
+    height: 100px;
+    margin-top: 20px;
+}

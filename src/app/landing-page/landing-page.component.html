@@ -35,10 +35,10 @@
                 <div fxLayout="column" fxLayoutAlign="space-between center">
                   <span class="my-connects">My Connects</span>
                   <div fxLayout="row" fxLayoutAlign="space-around center">
-                    <div class="my-connects-green">34<br>Completed</div>&nbsp;
-                    <div class="my-connects-orange">12<br>Approaching</div>&nbsp;
-                    <div class="my-connects-red">5<br>Past Due</div>&nbsp;
-                    <div class="my-connects-grey">5<br>Missed</div>
+                    <div class="my-connects-green" (click)="openExcelDialog('Completed')">34<br>Completed</div>&nbsp;
+                    <div class="my-connects-orange" (click)="openExcelDialog('Approaching')">12<br>Approaching</div>&nbsp;
+                    <div class="my-connects-red" (click)="openExcelDialog('Past Due')">5<br>Past Due</div>&nbsp;
+                    <div class="my-connects-grey" (click)="openExcelDialog('Missed')">5<br>Missed</div>
                   </div>
                 </div>
             </div>
@@ -67,6 +67,9 @@
                 <app-offering-portfolio></app-offering-portfolio>
             </mat-tab>
         </mat-tab-group>
+        <div fxLayout="row nowrap" fxLayoutAlign="center center" class="copyright">
+          Copyright © 2022 Deloitte Development LLC. All rights reserved.
+        </div>
     
 </div>
 <!-- <div fxLayout="row" fxLayoutAlign="center center" fxFlex="60" fxFill="blue">

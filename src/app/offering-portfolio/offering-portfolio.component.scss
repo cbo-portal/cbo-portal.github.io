@@ -10,13 +10,14 @@
     margin: 10px 5px 10px 10px; 
     display: block;
     border: 7px double black;
-    width: 300px;
+    width: auto;
     height: auto;
 }
 
 .mat-card {
-    background-color: rgb(231, 229, 229);
     border-radius: 0px;
+    min-width: 280px;
+    max-height: 150px;
 }
 
 .group-field {

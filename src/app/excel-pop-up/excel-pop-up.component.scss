@@ -1,0 +1,34 @@
+.full-width {
+    width: 100% !important;
+}
+
+.confirmation-dialog-container {
+    width: 50vw !important;
+    height: 50vh !important;
+  }
+
+.confirmation-dialog-header {
+    height: 14% !important;
+    margin-bottom: 0px !important;
+    overflow: hidden !important;
+  }
+  
+  .confirmation-dialog-body {
+    height: 76% !important;
+    overflow-y: auto !important;
+    //font-size: 14px;
+  }
+  
+  .confirmation-dialog-footer {
+    justify-content: center !important;
+    height: 10% !important;
+    overflow: hidden !important;
+  }
+
+//   .mat-raised-button.mat-primary {
+//     background-color: green
+// }
+
+// .mat-raised-button.mat-warn {
+//     background-color: rgb(230, 30, 30);
+// }

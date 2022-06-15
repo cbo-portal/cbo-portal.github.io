@@ -1,10 +1,10 @@
 <div>
-    <div fxLayout="row" fxLayoutAlign="space-around center">
+    <div fxLayout="row" fxLayoutAlign="space-around center" style="margin-top: 10px; margin-bottom: 10px;">
         <div style="padding-left: 30px;">Total Connects</div>
         <div>Total Practioners Joined</div>
     </div>
-    <div fxLayout="row" fxLayoutAlign="space-around center">
-      <div class="chart">
+    <div fxLayout="row" fxLayoutAlign="space-around center" style="padding-bottom: 10px;">
+      <mat-card>
           Connects
         <canvas width="300px" height="150px" baseChart
                 [data]="connectsPieChartData"
@@ -12,8 +12,8 @@
                 [options]="connectsPieChartOptions"
                 [plugins]="connectsPieChartPlugins">
         </canvas>
-      </div>
-      <div class="chart">
+      </mat-card>
+      <mat-card>
         Technology/Skill-set
         <canvas baseChart
           [data]="barChartData"
@@ -23,8 +23,8 @@
           (chartHover)="barChartHovered($event)"
           (chartClick)="barChartClicked($event)">
         </canvas>
-      </div>
-      <div class="chart">
+      </mat-card>
+      <mat-card>
         Status
       <canvas width="300px" height="150px" baseChart
               [data]="statusPieChartData"
@@ -32,7 +32,7 @@
               [options]="statusPieChartOptions"
               [plugins]="statusPieChartPlugins">
       </canvas>
-    </div>
+    </mat-card>
     </div>
   </div>
   <!-- <div class="button-row">

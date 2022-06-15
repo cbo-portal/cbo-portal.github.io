@@ -17,6 +17,8 @@ import { NgChartsModule } from 'ng2-charts';
 import { MatListModule } from '@angular/material/list'
 import { MatCardModule } from '@angular/material/card';
 import { ExcelPopUpComponent } from './excel-pop-up/excel-pop-up.component'
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -38,7 +40,9 @@ import { ExcelPopUpComponent } from './excel-pop-up/excel-pop-up.component'
     MatTabsModule,
     NgChartsModule,
     MatListModule,
-    MatCardModule
+    MatCardModule,
+    MatDialogModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
